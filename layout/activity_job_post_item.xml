@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="10dp"
+    android:elevation="5dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    app:cardElevation="5dp"
+    tools:context=".Job_post_item">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+
+        <TextView
+            android:id="@+id/job_companyname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="Company Name...."
+            android:textColor="@color/bluehead"
+            android:drawableLeft="@drawable/ic_vcompany"
+            android:drawablePadding="2dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/job_companyname"
+            android:text="26 Nov, 2023"
+            android:padding="10dp"
+            android:textColor="#616161"
+            android:id="@+id/job_date"
+            />
+
+        <TextView
+            android:id="@+id/job_description"
+            android:layout_below="@+id/job_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Description"
+            android:textColor="#212121"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"/>
+
+
+
+        <TextView
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Location"
+            android:textColor="#616161"
+            android:drawableLeft="@drawable/ic_vloc"
+            android:drawablePadding="2dp"
+            android:id="@+id/job_location"
+            android:layout_below="@+id/job_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"/>
+
+        <TextView
+            android:id="@+id/job_salary"
+            android:layout_below="@+id/job_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Salary"
+            android:textColor="#212121"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"/>
+
+        <TextView
+            android:id="@+id/job_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/job_salary"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="8dp"
+            android:drawableLeft="@drawable/phone"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="Contact No"
+            android:textColor="#212121"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+
+
+        <TextView
+            android:id="@+id/job_applybtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/job_companyname"
+            android:layout_alignParentRight="true"
+            android:background="#09450C"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp"
+
+            android:onClick="enter"
+            android:text="Apply"
+            android:elevation="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
